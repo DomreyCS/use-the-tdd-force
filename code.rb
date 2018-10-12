@@ -10,5 +10,11 @@ def repeat_last_word(sentence)
   new_sentence = "#{sentence} #{sentence.split.last}"
 end
 
-def return_value_of_type(type)
+def return_value_of_type(object)
+  if object.class == String
+    return object
+  elsif object.class == Fixnum
+    return true
+  end
+  
 end
